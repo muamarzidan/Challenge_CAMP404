@@ -4,9 +4,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/index.css">
+
+    <title>Hello World</title>
 </head>
 <body>
+    <nav class="navbar bg-light navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/image/js.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            IndoTiful
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tour
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Labuan Bajo</a></li>
+                  <li><a class="dropdown-item" href="#">Bali</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> for line to different list -->
+                  <li><a class="dropdown-item" href="#">Danau Toba</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+              <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+              <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#modalLogin">Daftar</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/image/lands.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Kunjungi Kami</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/image/lands.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Kunjungi Kami</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/image/lands.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Kunjungi Kami</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     
+    <div class="container">
+      <div class="row text-center my-4">
+        <h2>Top Destinasi</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./assets/image/view1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Wisata Pantai Contingen</h5>
+              <p class="card-text">Pantai penuh dengan monster</p>
+              <a href="#" class="btn btn-warning">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./assets/image/view2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Wisata Rawa Hantu</h5>
+              <p class="card-text">Rawa yang mempesona</p>
+              <a href="#" class="btn btn-warning">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./assets/image/view3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Wisata Air Apit</h5>
+              <p class="card-text">Air dengan keunikannya</p>
+              <a href="#" class="btn btn-warning">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./assets/image/view4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Wisata Pantai Cerah</h5>
+              <p class="card-text">Pantai 100% kecerahan layar hp</p>
+              <a href="#" class="btn btn-warning">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="row p-4 fw-bold fs-2">
+            <h3 class="text-center">Our Tour Guide</h3>
+        </div>
+        <table class="table">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col">Tour Agent</th>
+              <th scope="col">ALamat</th>
+              <th scope="col">Kontak</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-warning">
+              <th scope="row">1</th>
+              <td>Zoro</td>
+              <td>Jl Sesat</td>
+              <td>082222222</td>
+            </tr>
+            <tr class="table-primary">
+              <th scope="row">2</th>
+              <td>Luffy</td>
+              <td>Jl lawak</td>
+              <td>082222222</td>
+            </tr>
+            <tr class="table-info">
+              <th scope="row">3</th>
+              <td>Chopper</td>
+              <td>Jl Wedi</td>
+              <td>082222222</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+
+    <div class="p-5 bg-dark text-white">
+      <div class="text-center">
+          <i class="bi bi-telephone"> 081234567890</i>
+      </div>
+      <div class="text-center">
+        <i class="bi bi-envelope"> zidan123@gmail.com</i>
+      </div>
+    </div>
+    
+    <div class="modal" tabindex="-1" id="modalLogin">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
